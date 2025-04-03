@@ -7,13 +7,17 @@ button {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
 
-  &:hover {
-    background-color: red;
-  }
+button:hover {
+  background-color: red;
+}
 
-  &.selected {
-    color: white;
-    background-color: #72c1f9;
-  }
+button:disabled {
+  cursor: not-allowed;
+}
+
+button.selected {
+  color: white;
+  background-color: #72c1f9;
 }

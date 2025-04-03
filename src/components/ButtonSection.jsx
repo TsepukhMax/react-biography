@@ -12,9 +12,9 @@ export default function ButtonSection(){
   return (
     <section>
       <h3>Чим це навчання відрізняється від інших?</h3>
-      <Button isSelected={contentType === 'html'} buttonClicked={() => handleClick('html')}>HTML</Button>
-      <Button isSelected={contentType === 'css'} buttonClicked={() => handleClick('css')}>SCC</Button>
-      <Button isSelected={contentType === 'js'} buttonClicked={() => handleClick('js')}>JavaScript</Button>
+      <Button isSelected={contentType === 'html'} onClick={() => handleClick('html')}>HTML</Button>
+      <Button isSelected={contentType === 'css'} onClick={() => handleClick('css')}>SCC</Button>
+      <Button isSelected={contentType === 'js'} onClick={() => handleClick('js')}>JavaScript</Button>
 
       {!contentType && <p>Натисни на кнопку</p>}
       {contentType && <p>{differences[contentType]}</p>}
